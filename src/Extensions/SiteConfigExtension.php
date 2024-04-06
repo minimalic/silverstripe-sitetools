@@ -31,12 +31,12 @@ class SiteConfigExtension extends DataExtension
     public function updateCMSFields(FieldList $fields)
     {
 
-        $footerCopyright = TextField::create('FooterCopyright', _t(__CLASS__ . '.FooterCopyright', 'Footer copyright text (short) after year (year will be automatically updated)'));
-        $footerTrademarks = HTMLEditorField::create('FooterDisclaimer', _t(__CLASS__ . '.FooterDisclaimer', 'Footer disclaimer text');
+        $footerCopyright = TextField::create('FooterCopyright', _t(__CLASS__ . '.FooterCopyright', 'Footer copyright text (short), after year'));
+        $footerDisclaimer = HTMLEditorField::create('FooterDisclaimer', _t(__CLASS__ . '.FooterDisclaimer', 'Footer disclaimer/trademarks text');
 
         $fields->addFieldsToTab('Root.Footer', array(
             $footerCopyright,
-            $footerTrademarks,
+            $footerDisclaimer,
         ));
 
     }

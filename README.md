@@ -1,4 +1,4 @@
-# SilverStripe SiteTools
+# Silverstripe SiteTools
 
 Extension for Silverstripe's "siteconfig" for custom settings/fields.
 
@@ -26,17 +26,22 @@ Inside CMS use the settings area (tab "Footer").
 
 ## Configuration: Templates
 
-In your footer templates use:
+In your footer template use `$SiteConfig.FooterCopyright` or `$SiteConfig.FooterDisclaimer`.
+Example:
 
 ```html
-$SiteConfig.FooterCopyright
-$SiteConfig.FooterDisclaimer
+<div class="row">
+    &copy; $Now.Year $SiteConfig.FooterCopyright
+</div>
+<div class="row text-black-50">
+    $SiteConfig.FooterDisclaimer
+</div>
 ```
 
 
 ## License
 
-See [License](license.md)
+See [License](LICENSE.md)
 
 Copyright (c) 2024, minimalic.com - Sebastian Finke
 All rights reserved.
