@@ -32,7 +32,7 @@ class SiteConfigExtension extends DataExtension
     {
 
         $footerCopyright = TextField::create('FooterCopyright', _t(__CLASS__ . '.FooterCopyright', 'Footer copyright text (short), after year'));
-        $footerDisclaimer = HTMLEditorField::create('FooterDisclaimer', _t(__CLASS__ . '.FooterDisclaimer', 'Footer disclaimer/trademarks text');
+        $footerDisclaimer = HTMLEditorField::create('FooterDisclaimer', _t(__CLASS__ . '.FooterDisclaimer', 'Footer disclaimer/trademarks text'));
 
         $fields->addFieldsToTab('Root.Footer', array(
             $footerCopyright,
