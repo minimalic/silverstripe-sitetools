@@ -1,0 +1,4 @@
+en:
+  minimalic\SiteTools\Extensions\SiteConfigExtension:
+    FooterCopyright: 'Footer copyright text (short) after year (year will be automatically updated)'
+    FooterDisclaimer: 'Footer disclaimer text'

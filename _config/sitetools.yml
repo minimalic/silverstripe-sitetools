@@ -1,0 +1,6 @@
+---
+name: sitetools
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - minimalic\SiteTools\Extensions\SiteConfigExtension
