@@ -16,7 +16,7 @@ composer require minimalic/silverstripe-sitetools
 
 Refresh DB (shell website root):
 
-vendor/bin/sake dev/build "flush=all"
+`vendor/bin/sake dev/build "flush=all"`
 
 
 ## Configuration: CMS
