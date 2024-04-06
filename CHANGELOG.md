@@ -1,6 +1,12 @@
 # Change Log
 
 
+## [1.0.1](https://github.com/minimalic/silverstripe-sitetools/releases/tag/1.0.1) (2024-04-07)
+
+- fix `FooterDisclaimer` field creation
+- update README
+
+
 ## [1.0.0](https://github.com/minimalic/silverstripe-sitetools/releases/tag/1.0.0) (2024-04-07)
 
 First release
