@@ -2,3 +2,8 @@ en:
   minimalic\SiteTools\Extensions\SiteConfigExtension:
     FooterCopyright: 'Footer copyright text (short), after year'
     FooterDisclaimer: 'Footer disclaimer/trademarks text'
+    db_FooterCopyright: 'Footer copyright'
+    db_FooterDisclaimer: 'Footer disclaimer'
+  minimalic\SiteTools\Extensions\SiteTreeExtension:
+    ShowInFooter: 'Show in footer?'
+    db_ShowInFooter: 'Show in footer'

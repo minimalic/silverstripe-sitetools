@@ -4,3 +4,7 @@ name: sitetools
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - minimalic\SiteTools\Extensions\SiteConfigExtension
+
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - minimalic\SiteTools\Extensions\SiteTreeExtension
