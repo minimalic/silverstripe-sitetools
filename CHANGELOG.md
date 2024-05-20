@@ -1,6 +1,12 @@
 # Change Log
 
 
+## [1.1.0](https://github.com/minimalic/silverstripe-sitetools/releases/tag/1.1.0) (2024-05-21)
+
+### Fixes/Features:
+* New `ShowInFooter` page option
+
+
 ## [1.0.1](https://github.com/minimalic/silverstripe-sitetools/releases/tag/1.0.1) (2024-04-07)
 
 - fix `FooterDisclaimer` field creation
