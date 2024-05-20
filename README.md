@@ -1,6 +1,13 @@
 # Silverstripe SiteTools
 
-Extension for Silverstripe's "siteconfig" for custom settings/fields.
+Silverstripe Extension for Settings and Pages with custom configuration fields for usage in own templates.
+
+New options for Pages:
+- `ShowInFooter` (Bool)
+
+New options for SiteConfig:
+- `FooterCopyright` (Varchar)
+- `FooterDisclaimer` (HTMLText)
 
 
 ## Requirements
@@ -23,13 +30,12 @@ Or use base URL with:
 
 ## Configuration: CMS
 
-Inside CMS use the settings area (tab "Footer").
+Use the Settings area for global footer content or Page settings for the `ShowInMenus` option.
 
 
 ## Configuration: Templates
 
-In your footer template use `$SiteConfig.FooterCopyright` or `$SiteConfig.FooterDisclaimer`.
-Example:
+In your footer template use `$SiteConfig.FooterCopyright` or `$SiteConfig.FooterDisclaimer`:
 
 ```html
 <div class="row">
@@ -39,6 +45,8 @@ Example:
     $SiteConfig.FooterDisclaimer
 </div>
 ```
+
+For custom page lists/navs use loop with filter for `ShowInFooter` (e.g. instead of `ShowInMenus`).
 
 
 ## License
