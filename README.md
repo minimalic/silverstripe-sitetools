@@ -30,7 +30,7 @@ Or use base URL with:
 
 ## Configuration: CMS
 
-Use the Settings area for global footer content or Page settings for the `ShowInMenus` option.
+Use the Settings area for global footer content or Page settings for the `ShowInFooter` option.
 
 
 ## Configuration: Templates
@@ -46,7 +46,7 @@ In your footer template use `$SiteConfig.FooterCopyright` or `$SiteConfig.Footer
 </div>
 ```
 
-For custom page lists/navs use loop with filter for `ShowInFooter` (e.g. instead of `ShowInMenus`).
+For custom lists/navs of pages with `ShowInFooter` enabled use `<% loop $FooterMenu %>` in Footer templates.
 
 
 ## License
