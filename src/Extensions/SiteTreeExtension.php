@@ -3,7 +3,8 @@
 namespace minimalic\SiteTools\Extensions;
 
 use SilverStripe\ORM\DataExtension;
-
+use SilverStripe\ORM\ArrayList;
+use SilverStripe\CMS\Model\SiteTree;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\CheckboxField;
 
@@ -34,6 +35,31 @@ class SiteTreeExtension extends DataExtension
         $fields->addFieldsToTab('Root.Settings.Visibility', [
             $fieldShowInFooter,
         ], "ShowInSearch");
+    }
+
+    /**
+     * Generates footer menu from 1st level pages
+     *
+     * @return ArrayList<SiteTree>
+     */
+    public function getFooterMenu()
+    {
+        $pages = SiteTree::get()->filter([
+            "ShowInFooter" => 1,
+            "ParentID" => 0,
+        ]);
+
+        $visiblePages = [];
+
+        if (isset($visiblePages)) {
+            foreach ($pages as $page) {
+                if ($page->canView()) {
+                    $visiblePages[] = $page;
+                }
+            }
+        }
+
+        return new ArrayList($visiblePages);
     }
 
 }
